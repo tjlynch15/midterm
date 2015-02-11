@@ -12,6 +12,9 @@
 from movie_database import Movie
 best_movie = Movie.find_highest_rated('imdb_top250.csv')
 
+print(best_movie.title)
+print(best_movie.imdb_rating)
+
 assert type(best_movie) is Movie
 assert best_movie.title == "The Shawshank Redemption"
 assert best_movie.imdb_rating == 9.3
